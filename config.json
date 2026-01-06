@@ -8,11 +8,11 @@
   },
   "site": {
     "title": "Sai Vivek Kurapati",
-    "description": "Developer Portfolio",
+    "description": "Project Portfolio",
     "seo": {
-      "title": "Sai Vivek Kurapati - Developer Portfolio",
-      "description": "Developer Portfolio of Sai Vivek Kurapati",
-      "keywords": "developer, portfolio, github",
+      "title": "Sai Vivek Kurapati - Project Portfolio",
+      "description": " Project Portfolio of Sai Vivek Kurapati",
+      "keywords": "Electrical Engineering, portfolio, github",
       "author": "Sai Vivek Kurapati",
       "og_image": "https://avatars.githubusercontent.com/ksvivek25",
       "twitter_card": "summary_large_image",
@@ -21,7 +21,7 @@
   },
   "header": {
     "greeting": "Sai Vivek Kurapati",
-    "tagline": "Developer and Creator."
+    "tagline": "Robotics Engineer."
   },
   "social_links": [
     {
