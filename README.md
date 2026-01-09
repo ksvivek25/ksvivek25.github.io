@@ -1,4 +1,4 @@
-# Sai Vivek Kurapati - Developer Portfolio
+# Sai Vivek Kurapati - Electrical Engineer Portfolio
 
 <div align="left">
   
