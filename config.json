@@ -11,7 +11,7 @@
     "description": "Project Portfolio",
     "seo": {
       "title": "Sai Vivek Kurapati - Project Portfolio",
-      "description": " Project Portfolio of Sai Vivek Kurapati",
+      "description": " Project Portfolio",
       "keywords": "Electrical Engineering, portfolio, github",
       "author": "Sai Vivek Kurapati",
       "og_image": "https://avatars.githubusercontent.com/ksvivek25",
@@ -61,14 +61,13 @@
     "title": "Professional Experience",
     "jobs": [
       {
-        "company": "Your Company Name",
-        "role": "Your Job Title",
-        "date": "Start Date - Present",
+        "company": "The Spark Makerspace - UNT Libraries",
+        "role": "Spark Student Assistant 2",
+        "date": "Jan 2022 - Dec 2025",
         "responsibilities": [
-          "Add your key responsibilities and achievements here",
-          "Include specific technologies you worked with",
-          "Mention any notable projects or impact metrics",
-          "Update this section with your actual work experience"
+          "Performed hardware debugging and repair on electromechanical failures (3D printers/CNC), utilizing multimeters",
+          "and oscilloscopes to troubleshoot signal integrity issues.",
+          " 3D Printers, CNC, Arduino, Raspberry Pi, Electromechanical systems "
         ],
         "logo": "assets/logos/Placeholder_Logo.png",
         "logo_dark": "assets/logos/Placeholder_Logo.png"
