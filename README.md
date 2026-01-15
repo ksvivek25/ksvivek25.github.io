@@ -37,7 +37,7 @@ Let's connect and build something amazing together!
 
 - 🌐 **Portfolio**: [https://ksvivek25.github.io](https://ksvivek25.github.io)
 - 💻 **GitHub**: [https://github.com/ksvivek25](https://github.com/ksvivek25)
-- 🔗 **LinkedIn**: [undefined](undefined)
+- 🔗 **LinkedIn**: [https://www.linkedin.com/in/saivivekkurapati/](https://www.linkedin.com/in/saivivekkurapati/)
 
 ---
 
