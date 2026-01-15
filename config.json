@@ -21,7 +21,7 @@
   },
   "header": {
     "greeting": "Sai Vivek Kurapati",
-    "tagline": "Robotics Engineer."
+    "tagline": "Electrical Engineer."
   },
   "social_links": [
     {
@@ -29,6 +29,13 @@
       "url": "https://github.com/ksvivek25",
       "icon": "github",
       "required": true
+    },
+
+    {
+      "name":"LinkedIn",
+      "url" :"https://www.linkedin.com/in/saivivekkurapati/",
+      "icon": "linkedin"
+
     }
   ],
   "github_username": "ksvivek25",
