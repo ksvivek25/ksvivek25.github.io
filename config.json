@@ -72,11 +72,10 @@
         "role": "Spark Student Assistant 2",
         "date": "Jan 2022 - Dec 2025",
         "responsibilities": [
-          "Performed hardware debugging and repair on electromechanical failures (3D printers/CNC), utilizing multimeters",
-          "and oscilloscopes to troubleshoot signal integrity issues.",
-          " 3D Printers, CNC, Arduino, Raspberry Pi, Electromechanical systems "
+          "Performed hardware debugging and repair on electromechanical failures (3D printers/CNC), utilizing multimeters and oscilloscopes to troubleshoot signal integrity issues.3D Printers, CNC, Arduino, Raspberry Pi, Electromechanical systems ",
+          "Instructed and Trained 250+ students in on- demand engineering concepts such as 3D CAD, Python, Electronics."
         ],
-        "logo": "assets/logos/Placeholder_Logo.png",
+        "logo": "assets/logos/unt.png",
         "logo_dark": "assets/logos/Placeholder_Logo.png"
       }
     ]
@@ -87,28 +86,34 @@
       {
         "name": "Programming Languages & Technologies",
         "items": [
-          "JavaScript",
+          
           "Python",
-          "Java",
-          "TypeScript"
+          "C and C++",
+          "Bash Scripting"
         ]
       },
       {
         "name": "Tools & Platforms",
         "items": [
+          "Altium Designer",
+          "KiCad",
+          "LTSpice",
+          "Fusion 360",
+          "MATLAB/Simulink",
           "Git",
-          "GitHub",
-          "VS Code",
-          "Docker"
-        ]
+          "GitHub"        ]
       },
       {
         "name": "Certifications",
         "items": [
           {
-            "name": "Add your certification name here",
-            "url": "https://example.com/your-certification-link"
+            "name": "Data Science using Python and R Programming",
+            "Issuing Organization": "360DigiTMG"
           },
+          {
+            "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure"
+          },
+
           "You can also add certifications without links"
         ]
       }
@@ -116,6 +121,7 @@
   },
   "github_projects": {
     "title": "Projects on GitHub"
+    
   },
   "footer": {
     "show_social_links": true,
