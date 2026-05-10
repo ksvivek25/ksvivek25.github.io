@@ -76,7 +76,18 @@
           "Instructed and Trained 250+ students in on- demand engineering concepts such as 3D CAD, Python, Electronics."
         ],
         "logo": "assets/logos/unt.png",
-        "logo_dark": "assets/logos/Placeholder_Logo.png"
+        "logo_dark": "assets/logos/unt.png"
+      },
+      {
+        "company": "Innodatatics Private Limited",
+        "role": "Data Scientist Intern",
+        "date": "May 2021 - Dec 2021",
+        "responsibilities": [
+          "Performed End-to-End Data Analysis on large datasets, utilizing statistical methods and Exploratory Data Analysis (EDA) to identify actionable trends.",
+          "Developed and optimized ML Models on online shopping data using feature Engineering and Machine Learning algorithms such as K-Nearest Neighbors and SVM for classification"
+        ],
+        "logo": "assets/logos/innodatatics_logo.jpg",
+        "logo_dark": "assets/logos/innodatatics_logo.png"
       }
     ]
   },
@@ -89,12 +100,16 @@
           
           "Python",
           "C and C++",
-          "Bash Scripting"
+          "Linux",
+          "Terminal"
         ]
       },
       {
         "name": "Tools & Platforms",
         "items": [
+          "STM32 CubeMX IDE",
+          "Fusion 360",
+          "",
           "Altium Designer",
           "KiCad",
           "LTSpice",
@@ -112,9 +127,9 @@
           },
           {
             "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure"
-          },
+          }
 
-          "You can also add certifications without links"
+          
         ]
       }
     ]
