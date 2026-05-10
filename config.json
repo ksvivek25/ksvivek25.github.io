@@ -76,7 +76,7 @@
           "Instructed and Trained 250+ students in on- demand engineering concepts such as 3D CAD, Python, Electronics."
         ],
         "logo": "assets/logos/unt.png",
-        "logo_dark": "assets/logos/Placeholder_Logo.png"
+        "logo_dark": "assets/logos/unt.png"
       },
       {
         "company": "Innodatatics Private Limited",
@@ -87,7 +87,7 @@
           "Developed and optimized ML Models on online shopping data using feature Engineering and Machine Learning algorithms such as K-Nearest Neighbors and SVM for classification"
         ],
         "logo": "assets/logos/innodatatics_logo.jpg",
-        "logo_dark": "assets/logos/Placeholder_Logo.png"
+        "logo_dark": "assets/logos/innodatatics_logo.png"
       }
     ]
   },
@@ -127,9 +127,9 @@
           },
           {
             "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure"
-          },
+          }
 
-          "You can also add certifications without links"
+          
         ]
       }
     ]
