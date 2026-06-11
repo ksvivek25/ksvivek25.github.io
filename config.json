@@ -124,6 +124,7 @@
           "Python",
           "C and C++",
           "Linux",
+          "ROS 2",
           "Terminal"
         ]
       },
@@ -132,7 +133,6 @@
         "items": [
           "STM32 CubeMX IDE",
           "Fusion 360",
-          "ROS 2",
           "Altium Designer",
           "KiCad",
           "LTSpice",
