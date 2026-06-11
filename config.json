@@ -41,8 +41,8 @@
   "github_username": "ksvivek25",
   "about": {
     "paragraphs": [
-      "Welcome to my portfolio! I'm passionate about creating amazing digital experiences and solving complex problems through code.",
-      "This portfolio showcases my journey, projects, and skills. Feel free to explore and get in touch if you'd like to collaborate!"
+      "",
+      ""
     ]
   },
   "projects": {
@@ -71,13 +71,15 @@
         "company": "Department of Electrical Engineering - University of North Texas",
         "role": "Research Assistant",
         "date":"March 2026 - Present",
-        "responsibilities":"",
+        "responsibilities":
+        ["Programming Software Defined Radio's for experimentation of 5G Networks and Systems on UAV's for Advanced Air Mobility Development",
+        "Developed Python scripts to interface SDRs with Drone flight controller to establish command and control from Ground station SDRs over the air."],
         "logo": "assets/logos/unt.png",
         "logo_dark": "assets/logos/unt.png"
       },
-      
+
       {
-        "company": "STARSHIP, Technologies Inc",
+        "company": "STARSHIP Technologies, Inc.",
         "role":" Robot Technician, Part-Time",
         "date":"April 2026 - June 2026",
         "responsibilities": 
@@ -130,7 +132,7 @@
         "items": [
           "STM32 CubeMX IDE",
           "Fusion 360",
-          "",
+          "ROS 2",
           "Altium Designer",
           "KiCad",
           "LTSpice",
@@ -147,7 +149,8 @@
             "Issuing Organization": "360DigiTMG"
           },
           {
-            "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure"
+            "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure",
+            "Issuing Organization": "National Science Foundation"
           }
 
           
