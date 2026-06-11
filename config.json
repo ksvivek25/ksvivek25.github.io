@@ -68,6 +68,25 @@
     "title": "Professional Experience",
     "jobs": [
       {
+        "company": "Department of Electrical Engineering - University of North Texas",
+        "role": "Research Assistant",
+        "date":"March 2026 - Present",
+        "responsibilities":"",
+        "logo": "assets/logos/unt.png",
+        "logo_dark": "assets/logos/unt.png"
+      }
+      {"company": "STARSHIP, Technologies Inc",
+      "role":" Robot Technician, Part-Time",
+      "date":"April 2026 - June 2026",
+      "responsibilities": 
+      ["Diagnosed and resolved electronics Board problems on the delivery robots, maintained detailed technical documentation using Confluence and Jira.",
+        "Performed motor calibration and drive train performance and system upgrades using terminal and maintained fleet health at 90% to meet client demands."
+      ],
+      "logo": "assets/logos/starship.png",
+        "logo_dark": "assets/logos/starship.png"
+
+      },
+      {
         "company": "The Spark Makerspace - UNT Libraries",
         "role": "Spark Student Assistant 2",
         "date": "Jan 2022 - Dec 2025",
