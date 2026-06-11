@@ -75,10 +75,12 @@
         "logo": "assets/logos/unt.png",
         "logo_dark": "assets/logos/unt.png"
       },
-      {"company": "STARSHIP, Technologies Inc",
-      "role":" Robot Technician, Part-Time",
-      "date":"April 2026 - June 2026",
-      "responsibilities": 
+      
+      {
+        "company": "STARSHIP, Technologies Inc",
+        "role":" Robot Technician, Part-Time",
+        "date":"April 2026 - June 2026",
+        "responsibilities": 
       ["Diagnosed and resolved electronics Board problems on the delivery robots, maintained detailed technical documentation using Confluence and Jira.",
         "Performed motor calibration and drive train performance and system upgrades using terminal and maintained fleet health at 90% to meet client demands."
       ],
