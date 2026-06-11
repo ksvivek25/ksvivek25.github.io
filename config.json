@@ -143,15 +143,15 @@
       },
       {
         "name": "Certifications",
-        "items": [
+        "items": 
+        [
           {
-            "name": "Data Science using Python and R Programming",
-            "Issuing Organization": "360DigiTMG"
+            "name": "Data Science using Python and R Programming"
           },
           {
-            "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure",
-            "Issuing Organization": "National Science Foundation"
-          }]
+            "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure"
+          }
+        ]
       }
     ]
   },
