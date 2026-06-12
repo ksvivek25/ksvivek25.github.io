@@ -27,4 +27,3 @@ Let's connect and build something amazing together!
   </a>
 </p>
 
-*Based on [portfolio template](https://github.com/yashrajnayak/developer-portfolio) originally created by [Yashraj Nayak](https://github.com/yashrajnayak)*
