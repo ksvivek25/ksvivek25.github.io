@@ -22,6 +22,6 @@ Let's connect and build something amazing together!
 
 ---
 
-[![My Skills](https://skillicons.dev/icons?i=C,C++,Python)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,python)](https://skillicons.dev)
 
 *Based on [portfolio template](https://github.com/yashrajnayak/developer-portfolio) originally created by [Yashraj Nayak](https://github.com/yashrajnayak)*
