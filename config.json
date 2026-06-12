@@ -41,8 +41,8 @@
   "github_username": "ksvivek25",
   "about": {
     "paragraphs": [
-      "Welcome to my portfolio! I'm passionate about creating amazing digital experiences and solving complex problems through code.",
-      "This portfolio showcases my journey, projects, and skills. Feel free to explore and get in touch if you'd like to collaborate!"
+      "",
+      ""
     ]
   },
   "projects": {
@@ -56,17 +56,42 @@
           "Features dark/light mode, dynamic content loading, and GitHub integration",
           "Fully configurable through JSON with automated README generation"
         ],
-        "picture": "assets/projects/Placeholder.png",
-        "link": {
-          "url": "https://ksvivek25.github.io",
-          "title": "View Live Site"
+        "picture": "assets/projects/My Projects.png",
+        "link": 
+        {
+          "url": "https://github.com/ksvivek25/PID-Controller-Design-Project",
+          "title": "PID based Controller "
         }
+        
       }
     ]
   },
   "experience": {
     "title": "Professional Experience",
     "jobs": [
+      {
+        "company": "Department of Electrical Engineering - University of North Texas",
+        "role": "Research Assistant",
+        "date":"March 2026 - Present",
+        "responsibilities":
+        ["Programming Software Defined Radio's for experimentation of 5G Networks and Systems on UAV's for Advanced Air Mobility Development",
+        "Developed Python scripts to interface SDRs with Drone flight controller to establish command and control from Ground station SDRs over the air."],
+        "logo": "assets/logos/unt.png",
+        "logo_dark": "assets/logos/unt.png"
+      },
+
+      {
+        "company": "STARSHIP Technologies, Inc.",
+        "role":" Robot Technician, Part-Time",
+        "date":"April 2026 - June 2026",
+        "responsibilities": 
+      ["Diagnosed and resolved electronics Board problems on the delivery robots, maintained detailed technical documentation using Confluence and Jira.",
+        "Performed motor calibration and drive train performance and system upgrades using terminal and maintained fleet health at 90% to meet client demands."
+      ],
+      "logo": "assets/logos/starship.png",
+      "logo_dark": "assets/logos/starship.png"
+
+      },
       {
         "company": "The Spark Makerspace - UNT Libraries",
         "role": "Spark Student Assistant 2",
@@ -101,6 +126,7 @@
           "Python",
           "C and C++",
           "Linux",
+          "ROS 2",
           "Terminal"
         ]
       },
@@ -109,7 +135,6 @@
         "items": [
           "STM32 CubeMX IDE",
           "Fusion 360",
-          "",
           "Altium Designer",
           "KiCad",
           "LTSpice",
@@ -120,16 +145,14 @@
       },
       {
         "name": "Certifications",
-        "items": [
+        "items": 
+        [
           {
-            "name": "Data Science using Python and R Programming",
-            "Issuing Organization": "360DigiTMG"
+            "name": "Data Science using Python and R Programming"
           },
           {
             "name": "National Science Foundation Fellowship: Unmanned Aerial Systems and Cyber Infrastructure"
           }
-
-          
         ]
       }
     ]
