@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detailed case study and documentation for the PID Controller Design project.">
-    <meta name="keywords" content="PID Controller, MATLAB, Simulink, Control Systems, feedback loops, electrical engineer">
-    <meta name="author" content="Sai Vivek Kurapati">
-    <title>PID Controller Design - Case Study</title>
+    <meta name="description" content="Detailed case study and documentation.">
+    <title>Project Case Study</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='10'/><line x1='2' y1='12' x2='22' y2='12'/><path d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z'/></svg>">
     <link rel="preload" href="../css/project-detail.css" as="style">
     <link rel="stylesheet" href="../css/project-detail.css">
+    <!-- Marked.js for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     
@@ -41,153 +41,21 @@
     <main class="container">
         
         <!-- Project Hero Header -->
-        <section class="project-hero" aria-label="Project overview hero">
-            <h1>PID Controller Design Project</h1>
-            <div class="project-meta">
-                <span class="project-meta-badge">📅 December 2025</span>
-                <span class="project-meta-badge">⚡ Control Systems Engineering</span>
-                <span class="project-meta-badge">🔧 MATLAB & Simulink</span>
-            </div>
-            <p>Designed, simulated, and deployed a Proportional-Integral-Derivative controller for active stabilization and precision error correction in feedback-driven mechanical stages.</p>
-            
-            <div class="tech-stack-container">
-                <span class="tech-badge">MATLAB / Simulink</span>
-                <span class="tech-badge">C/C++ Firmware</span>
-                <span class="tech-badge">STM32 MCU</span>
-                <span class="tech-badge">Active Stabilization</span>
-            </div>
+        <section class="project-hero" aria-label="Project overview hero" style="opacity: 0;">
+            <h1 id="project-title">Loading...</h1>
+            <div class="project-meta" id="project-meta"></div>
+            <p id="project-summary"></p>
+            <div class="tech-stack-container" id="project-tags"></div>
         </section>
 
         <!-- Two-Column Layout -->
         <div class="project-details-grid">
             
             <!-- Column 1: Detailed Documentation -->
-            <article class="project-doc">
-                
-                <section class="doc-section" aria-label="Project Overview">
-                    <h2>Project Overview</h2>
-                    <p>This project showcases the modeling, testing, and deployment of a PID feedback control loop. Precise positioning and vibration dampening are critical in modern electromechanical assemblies. By constructing a dynamic system model, we tuned PID parameters to minimize overshoot, settle rapidly, and eliminate steady-state error under shifting load conditions.</p>
-                    
-                    <div class="highlight-panel">
-                        <p><strong>Control Philosophy:</strong> Proper filtering of the derivative component (using low-pass first-order filters) is critical to prevent high-frequency sensor noise from saturating the actuator input.</p>
-                    </div>
-                </section>
-
-                <section class="doc-section" aria-label="System Modeling & Simulation">
-                    <h2>System Modeling & Simulation</h2>
-                    <p>The control system was modeled in MATLAB and Simulink using transfer functions representing the plant dynamics. The controller characteristics were optimized iteratively:</p>
-                    <ul>
-                        <li><strong>Proportional Gain (Kp):</strong> Establishes the rise time and responsiveness to active error offsets.</li>
-                        <li><strong>Integral Gain (Ki):</strong> Accumulates past error offsets to remove persistent steady-state tracking deviations.</li>
-                        <li><strong>Derivative Gain (Kd):</strong> Predicts future error trends to provide damping, stabilizing oscillations.</li>
-                    </ul>
-                </section>
-
-                <section class="doc-section" aria-label="Firmware Integration & Code">
-                    <h2>Firmware Implementation</h2>
-                    <p>The code snippet below illustrates a discrete-time execution of the PID algorithm implemented in C on an STM32 microcontroller:</p>
-<pre><code>// Discrete PID Controller Algorithm
-float ComputePID(float setpoint, float current_val, float dt) {
-    float error = setpoint - current_val;
-    
-    // Proportional term
-    float P_val = Kp * error;
-    
-    // Integral term (with windup protection limit)
-    integral += error * dt;
-    if (integral > INTEGRAL_LIMIT) integral = INTEGRAL_LIMIT;
-    else if (integral < -INTEGRAL_LIMIT) integral = -INTEGRAL_LIMIT;
-    float I_val = Ki * integral;
-    
-    // Derivative term (with noise filtering)
-    float derivative = (error - last_error) / dt;
-    float D_val = Kd * derivative;
-    
-    last_error = error;
-    return P_val + I_val + D_val;
-}</code></pre>
-                </section>
-
-                <section class="doc-section" aria-label="Results & Validation">
-                    <h2>Results & Validation</h2>
-                    <p>Hardware testing using real-time hardware-in-the-loop (HIL) simulators and oscilloscopes confirmed the modeled results:</p>
-                    <ol>
-                        <li>Overshoot was successfully restricted to less than 5%.</li>
-                        <li>The system achieved a settling time of under 0.8 seconds under full-load conditions.</li>
-                        <li>Steady-state positioning error collapsed to absolute zero within resolution limits.</li>
-                    </ol>
-                </section>
-                
-            </article>
+            <article class="project-doc" id="project-body" style="opacity: 0;"></article>
 
             <!-- Column 2: Media and Visual Showcase -->
-            <aside class="media-showcase">
-                
-                <!-- Media Block: Demonstration Video -->
-                <div class="media-card">
-                    <h3>Simulation Demo</h3>
-                    <!-- REPLACE the src with your local mp4 file or swap this with a YouTube iframe link -->
-                    <div class="video-wrapper">
-                        <!-- Example local video tag placeholder -->
-                        <video controls poster="../assets/projects/Placeholder.png">
-                            <source src="pid-simulation.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        
-                        <!-- Example YouTube iframe replacement layout (uncomment if using YouTube):
-                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" allowfullscreen></iframe>
-                        -->
-                    </div>
-                    <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
-                        <em>Placeholder description: Dynamic system response simulation comparing open-loop vs closed-loop PID control performance.</em>
-                    </p>
-                </div>
-
-                <!-- Media Block: Screenshot 1 -->
-                <div class="media-card">
-                    <h3>MATLAB Response Plot</h3>
-                    <div class="media-placeholder image-aspect">
-                        <!-- REPLACE with your screenshot path, e.g. ../assets/projects/pid-response.png -->
-                        <img src="../assets/projects/Placeholder.png" alt="Overshoot and settling response curve charts in MATLAB">
-                    </div>
-                </div>
-
-                <!-- Media Block: Technical Details -->
-                <div class="media-card">
-                    <h3>Tuning Specifications</h3>
-                    <table class="spec-table">
-                        <thead>
-                            <tr>
-                                <th>Parameter</th>
-                                <th>Target Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Proportional Gain (Kp)</td>
-                                <td>1.85</td>
-                            </tr>
-                            <tr>
-                                <td>Integral Gain (Ki)</td>
-                                <td>0.45</td>
-                            </tr>
-                            <tr>
-                                <td>Derivative Gain (Kd)</td>
-                                <td>0.12</td>
-                            </tr>
-                            <tr>
-                                <td>Max Overshoot Limit</td>
-                                <td>&lt; 5.0 %</td>
-                            </tr>
-                            <tr>
-                                <td>Bandwidth Resolution</td>
-                                <td>100 Hz</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </aside>
+            <aside class="media-showcase" id="project-sidebar" style="opacity: 0;"></aside>
             
         </div>
 
