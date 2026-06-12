@@ -347,9 +347,15 @@ export class SectionManager {
         
         const itemsHtml = Array.isArray(category.items)
             ? category.items.map(item => {
-                // Check if item is an object with name and url properties (certification link)
-                if (typeof item === 'object' && item.name && item.url) {
-                    return `<li><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a></li>`;
+                // Check if item is an object (e.g. certification)
+                if (typeof item === 'object' && item !== null) {
+                    if (item.name && item.url) {
+                        return `<li><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a></li>`;
+                    } else if (item.name) {
+                        return `<li>${item.name}</li>`;
+                    } else {
+                        return `<li>${JSON.stringify(item)}</li>`;
+                    }
                 } else {
                     return `<li>${item}</li>`;
                 }
