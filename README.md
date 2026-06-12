@@ -21,7 +21,10 @@ Let's connect and build something amazing together!
 - 🔗 **LinkedIn**: [https://www.linkedin.com/in/saivivekkurapati/](https://www.linkedin.com/in/saivivekkurapati/)
 
 ---
-
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,python)](https://skillicons.dev)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,c,cpp,python,matlab,git,linux,ros" />
+  </a>
+</p>
 
 *Based on [portfolio template](https://github.com/yashrajnayak/developer-portfolio) originally created by [Yashraj Nayak](https://github.com/yashrajnayak)*
