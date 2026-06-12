@@ -64,8 +64,9 @@ export class SectionManager {
     // Update about section
     updateAboutSection(config) {
         const aboutSection = document.querySelector('.about');
-        if (config.about?.paragraphs?.length) {
-            aboutSection.innerHTML = config.about.paragraphs.map(p => `<p>${p}</p>`).join('');
+        const activeParagraphs = config.about?.paragraphs?.filter(p => p.trim() !== '') || [];
+        if (activeParagraphs.length) {
+            aboutSection.innerHTML = activeParagraphs.map(p => `<p>${p}</p>`).join('');
         } else {
             aboutSection.innerHTML = '<p>Welcome to my portfolio!</p>';
         }
@@ -124,6 +125,44 @@ export class SectionManager {
             ? project.description.map(desc => `<li>${desc}</li>`).join('')
             : `<li>${project.description}</li>`;
         
+        let linksHtml = '';
+        if (project.detail_url) {
+            linksHtml += `
+                <a href="${project.detail_url}" class="case-study-link" aria-label="Read case study for ${project.name}">
+                    Read Case Study →
+                </a>
+            `;
+        }
+        if (project.link) {
+            const linkUrl = typeof project.link === 'object' ? project.link.url : project.link;
+            const linkTitle = typeof project.link === 'object' ? (project.link.title || 'View Project') : 'View Project';
+            linksHtml += `
+                <a href="${linkUrl}" target="_blank" rel="noopener noreferrer" aria-label="View ${project.name} project external link">
+                    ${linkTitle}
+                </a>
+            `;
+        }
+        const linksContainer = linksHtml ? `<div class="project-links">${linksHtml}</div>` : '';
+
+        let imageHtml = '';
+        if (project.picture) {
+            if (project.detail_url) {
+                imageHtml = `
+                <div class="project-image">
+                    <a href="${project.detail_url}" aria-label="Read case study for ${project.name}">
+                        <img src="${project.picture}" alt="${project.name} project screenshot" loading="lazy">
+                    </a>
+                </div>
+                `;
+            } else {
+                imageHtml = `
+                <div class="project-image">
+                    <img src="${project.picture}" alt="${project.name} project screenshot" loading="lazy">
+                </div>
+                `;
+            }
+        }
+
         projectItem.innerHTML = `
             <div class="project-header">
                 <div class="project-header-content">
@@ -144,19 +183,9 @@ export class SectionManager {
                 <ul>
                     ${descriptionHtml}
                 </ul>
-                ${project.link ? `
-                <div class="project-links">
-                    <a href="${typeof project.link === 'object' ? project.link.url : project.link}" target="_blank" rel="noopener noreferrer" aria-label="View ${project.name} project">
-                        ${typeof project.link === 'object' ? (project.link.title || 'View Project') : 'View Project'}
-                    </a>
-                </div>
-                ` : ''}
+                ${linksContainer}
             </div>
-            ${project.picture ? `
-            <div class="project-image">
-                <img src="${project.picture}" alt="${project.name} project screenshot" loading="lazy">
-            </div>
-            ` : ''}
+            ${imageHtml}
         `;
         
         // Add click event listener for accordion functionality on mobile

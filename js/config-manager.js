@@ -57,7 +57,7 @@ export class ConfigManager {
     hasContent(sectionKey) {
         switch (sectionKey) {
             case 'about':
-                return this.config?.about?.paragraphs?.length > 0;
+                return (this.config?.about?.paragraphs?.filter(p => p.trim() !== '') || []).length > 0;
             case 'projects':
                 return this.config?.projects?.items?.length > 0;
             case 'experience':

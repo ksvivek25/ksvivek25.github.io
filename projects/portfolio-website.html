@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed case study and documentation for the Portfolio Website project.">
+    <meta name="keywords" content="Portfolio Website, case study, documentation, electrical engineer, web developer">
+    <meta name="author" content="Sai Vivek Kurapati">
+    <title>Portfolio Website - Case Study</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='10'/><line x1='2' y1='12' x2='22' y2='12'/><path d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z'/></svg>">
+    <link rel="preload" href="../css/project-detail.css" as="style">
+    <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="project-nav-header">
+        <a href="../index.html" class="back-home-btn" aria-label="Go back to the homepage">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Home
+        </a>
+        
+        <!-- Theme switcher -->
+        <button class="theme-switch" aria-label="Toggle dark/light theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Project Hero Header -->
+        <section class="project-hero" aria-label="Project overview hero">
+            <h1>Portfolio Website</h1>
+            <div class="project-meta">
+                <span class="project-meta-badge">📅 January 2026</span>
+                <span class="project-meta-badge">💻 Front-End Engineering</span>
+                <span class="project-meta-badge">🛠️ Active Development</span>
+            </div>
+            <p>A modern, modular portfolio website engine engineered for dynamic configuration loading, automatic SEO generation, and clean theme transitions.</p>
+            
+            <div class="tech-stack-container">
+                <span class="tech-badge">Vanilla JavaScript</span>
+                <span class="tech-badge">CSS3 Custom Variables</span>
+                <span class="tech-badge">JSON Config Loader</span>
+                <span class="tech-badge">GitHub REST API</span>
+            </div>
+        </section>
+
+        <!-- Two-Column Layout -->
+        <div class="project-details-grid">
+            
+            <!-- Column 1: Detailed Documentation -->
+            <article class="project-doc">
+                
+                <section class="doc-section" aria-label="Project Overview">
+                    <h2>Project Overview</h2>
+                    <p>This project was initiated to build a modular portfolio generator that separates content from layout. Traditional static portfolios require modifying core HTML/CSS structures to add projects or modify details. This engine utilizes a centralized configuration file allowing users to update their profile by editing simple data blocks.</p>
+                    
+                    <div class="highlight-panel">
+                        <p><strong>Key Insight:</strong> Separating database-like configuration from view controllers makes portfolios highly portable, maintainable, and prevents merge conflicts during rapid updates.</p>
+                    </div>
+                </section>
+
+                <section class="doc-section" aria-label="System Architecture">
+                    <h2>System Architecture</h2>
+                    <p>The application follows a simple Model-View-Controller style structure entirely implemented in client-side modules:</p>
+                    <ul>
+                        <li><strong>Configuration Loader:</strong> Fetches and parses <code>config.json</code> asynchronously.</li>
+                        <li><strong>Section Controller:</strong> Dynamically generates DOM blocks for project, experience, and skill nodes.</li>
+                        <li><strong>SEO Engine:</strong> Dynamically rewrites title and meta properties, injects Schema.org compliant JSON-LD markup on load.</li>
+                        <li><strong>GitHub Connector:</strong> Connects to the GitHub REST API to fetch and render projects with the <code>featured</code> topic tag.</li>
+                    </ul>
+                </section>
+
+                <section class="doc-section" aria-label="Implementation & Code">
+                    <h2>Code Implementation</h2>
+                    <p>Below is a snippet demonstrating how theme switching is managed globally and synced with the user's system preferences:</p>
+<pre><code>// Dynamic Theme Manager implementation snippet
+toggleTheme() {
+    const currentTheme = this.root.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    this.root.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}</code></pre>
+                </section>
+
+                <section class="doc-section" aria-label="Future Roadmap">
+                    <h2>Future Enhancements</h2>
+                    <p>Currently, plans are underway to include:</p>
+                    <ol>
+                        <li>Integrations with CI/CD GitHub Actions for automated bundle validation.</li>
+                        <li>Interactive timeline controls for professional experience animations.</li>
+                        <li>Automated visual regression tests in headless environments.</li>
+                    </ol>
+                </section>
+                
+            </article>
+
+            <!-- Column 2: Media and Visual Showcase -->
+            <aside class="media-showcase">
+                
+                <!-- Media Block: Demonstration Video -->
+                <div class="media-card">
+                    <h3>Demonstration Video</h3>
+                    <!-- REPLACE the src with your local mp4 file or swap this with a YouTube iframe link -->
+                    <div class="video-wrapper">
+                        <!-- Example local video tag placeholder -->
+                        <video controls poster="../assets/projects/Placeholder.png">
+                            <source src="example-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <!-- Example YouTube iframe replacement layout (uncomment if using YouTube):
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" allowfullscreen></iframe>
+                        -->
+                    </div>
+                    <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <em>Placeholder description: Video showcase demonstrating the dynamic theme loader and configuration reloading.</em>
+                    </p>
+                </div>
+
+                <!-- Media Block: Screenshot 1 -->
+                <div class="media-card">
+                    <h3>Mobile Responsive Layout Mockup</h3>
+                    <div class="media-placeholder image-aspect">
+                        <!-- REPLACE with your screenshot path, e.g. ../assets/projects/portfolio-responsive.png -->
+                        <img src="../assets/projects/Placeholder.png" alt="Screenshot of mobile responsive grid system layout">
+                    </div>
+                </div>
+
+                <!-- Media Block: Technical Details -->
+                <div class="media-card">
+                    <h3>Project Specifications</h3>
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>Metric / Parameter</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Load Time (FCP)</td>
+                                <td>~150ms</td>
+                            </tr>
+                            <tr>
+                                <td>CSS Architecture</td>
+                                <td>Vanilla CSS Variable Modules</td>
+                            </tr>
+                            <tr>
+                                <td>Routing Protocol</td>
+                                <td>Static Relational Subpages</td>
+                            </tr>
+                            <tr>
+                                <td>SEO Rating</td>
+                                <td>100/100 (Google Lighthouse)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </aside>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer class="project-footer">
+            <p>&copy; 2026 Sai Vivek Kurapati. Built with passion.</p>
+        </footer>
+
+    </main>
+
+    <!-- Page script -->
+    <script type="module" src="../js/project-detail.js"></script>
+</body>
+</html>

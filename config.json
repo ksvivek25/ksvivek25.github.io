@@ -41,8 +41,8 @@
   "github_username": "ksvivek25",
   "about": {
     "paragraphs": [
-      "",
-      ""
+      "I am an Electrical Engineer and Researcher passionate about robotics, autonomous systems, and wireless communication. Currently serving as a Research Assistant at the University of North Texas, my work focuses on programming Software Defined Radios (SDRs) to enable command and control for unmanned aerial vehicles (UAVs) over 5G networks. With hands-on experience as a Robot Technician at Starship Technologies and a Student Assistant at UNT's Spark Makerspace, I have developed strong skills in hardware debugging, electromechanical systems repair, and software integration.",
+      "My technical expertise bridges hardware design (utilizing Altium Designer, KiCad, and STM32 CubeMX) and software development (Python, C/C++, ROS 2, and machine learning). I thrive at the intersection of hardware and software, designing robust, intelligent systems and resolving complex signal integrity and hardware diagnostics challenges."
     ]
   },
   "projects": {
@@ -50,19 +50,33 @@
     "items": [
       {
         "name": "Portfolio Website",
-        "date": "January 6, 2026",
+        "date": "January 2026",
         "description": [
           "A modern, responsive portfolio website built with vanilla JavaScript",
           "Features dark/light mode, dynamic content loading, and GitHub integration",
           "Fully configurable through JSON with automated README generation"
         ],
-        "picture": "assets/projects/My Projects.png",
-        "link": 
-        {
-          "url": "https://github.com/ksvivek25/PID-Controller-Design-Project",
-          "title": "PID based Controller "
+        "picture": "assets/projects/Placeholder.png",
+        "detail_url": "projects/portfolio-website.html",
+        "link": {
+          "url": "https://github.com/ksvivek25/ksvivek25.github.io",
+          "title": "View Source Code"
         }
-        
+      },
+      {
+        "name": "PID Controller Design Project",
+        "date": "December 2025",
+        "description": [
+          "Designed and tuned a PID controller for precision feedback loop systems",
+          "Simulated system dynamics and transient response using MATLAB and Simulink",
+          "Implemented microcontroller firmware for real-time sensor integration"
+        ],
+        "picture": "assets/projects/Placeholder.png",
+        "detail_url": "projects/pid-controller.html",
+        "link": {
+          "url": "https://github.com/ksvivek25/PID-Controller-Design-Project",
+          "title": "View PID Code"
+        }
       }
     ]
   },
@@ -88,8 +102,8 @@
       ["Diagnosed and resolved electronics Board problems on the delivery robots, maintained detailed technical documentation using Confluence and Jira.",
         "Performed motor calibration and drive train performance and system upgrades using terminal and maintained fleet health at 90% to meet client demands."
       ],
-      "logo": "assets/logos/starship.png",
-      "logo_dark": "assets/logos/starship.png"
+      "logo": "assets/logos/starship.jpg",
+      "logo_dark": "assets/logos/starship.jpg"
 
       },
       {
